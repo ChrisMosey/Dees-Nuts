@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Simple Terrain (Mask Details)
+  m_Shader: {fileID: 4800000, guid: 508ecece981b03b49b8a79c70e0733e7, type: 3}
+  m_ShaderKeywords: _INVERTMASK_ON
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DetailMask:
+        m_Texture: {fileID: 2800000, guid: 03c4cebd2924dee4784fd2a5e11fd5cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse2:
+        m_Texture: {fileID: 2800000, guid: 571a1440284e51340ac13f6a31b5ed06, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseSidesXZ:
+        m_Texture: {fileID: 2800000, guid: dcbe697df40a4f84292bf06d181fd349, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseTOpDown:
+        m_Texture: {fileID: 2800000, guid: 183effb3efdf5024cb734f77e2c18820, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseTopDown:
+        m_Texture: {fileID: 2800000, guid: 183effb3efdf5024cb734f77e2c18820, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 183effb3efdf5024cb734f77e2c18820, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Splat0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendValue: 0.5
+    - _Contrast: 1.51
+    - _Emissive: 0
+    - _GeneralTiling: 0.1
+    - _InvertMask: 1
+    - _MaskAmount: 0.39
+    - _Rotation2: 0
+    - _RotationX: 0
+    - _RotationY: -90
+    - _RotationZ: 0
+    - _Tiling2: 1
+    - _TilingX: 1
+    - _TilingY: 0.93
+    - _TilingZ: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
