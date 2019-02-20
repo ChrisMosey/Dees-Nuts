@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        Debug.Log("woooo doooooog");
+        Debug.Log("NUTTTTS BOIIII");
     }
 
     // Update is called once per frame
@@ -24,12 +24,15 @@ public class PlayerController : MonoBehaviour {
     // }
 
     private void OnTriggerEnter(Collider other) {
+        if(other.name == "Acorn") addAcorns(1);        
+    }
 
-        if(other.name == "Acorn"){
-            numAcorns++;
-            Debug.Log(numAcorns);
-        }
-        
+    private void addAcorns(int num){
+        numAcorns += num;
+    }
+
+    public int getNumAcorns(){
+        return numAcorns;
     }
 
 }
