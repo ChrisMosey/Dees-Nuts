@@ -8,16 +8,67 @@ public class SeasonController : MonoBehaviour {
 
     private Season currentSeason = Season.SUMMER;
 
+    public  GameObject[] winterObjects;
+    public  GameObject[] summerObjects;
+    public  GameObject[] springObjects;
+    public  GameObject[] fallObjects;
+
+    private void getGameObjects(){
+        winterObjects = GameObject.FindGameObjectsWithTag("WINTER");
+        summerObjects = GameObject.FindGameObjectsWithTag("SUMMER");
+        springObjects = GameObject.FindGameObjectsWithTag("SPRING");
+        fallObjects = GameObject.FindGameObjectsWithTag("FALL");
+    }
+
+    void Start() {
+        getGameObjects();
+        setSeason("SUMMER");
+    }
+
     public void setSeason(string season){
+
+        foreach (GameObject go in winterObjects) { 
+            go.active = false;
+        }
+        foreach (GameObject go in summerObjects) { 
+            go.active = false;
+        }
+        foreach (GameObject go in springObjects) { 
+            go.active = false;
+        }
+        foreach (GameObject go in fallObjects) { 
+            go.active = false;
+        }
+    
+
+        Debug.Log("Season: "+season);
+
+        // Change Season
         switch (season){
             case "WINTER":
-                currentSeason = Season.WINTER; break;
+                currentSeason = Season.WINTER; 
+                foreach (GameObject go in winterObjects) {
+                    go.active = true;
+                }
+                break;
             case "FALL":
-                currentSeason = Season.FALL; break;
+                currentSeason = Season.FALL; 
+                foreach (GameObject go in fallObjects) {
+                    go.active = true;
+                }
+                break;
             case "SPRING":
-                currentSeason = Season.SPRING; break;
+                currentSeason = Season.SPRING; 
+                foreach (GameObject go in springObjects) {
+                    go.active = true;
+                }
+                break;
             default:
-                currentSeason = Season.SUMMER; break;
+                currentSeason = Season.SUMMER; 
+                foreach (GameObject go in summerObjects) {
+                    go.active = true;
+                }
+                break;
       }
     }
 

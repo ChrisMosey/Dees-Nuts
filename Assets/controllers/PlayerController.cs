@@ -32,10 +32,10 @@ public class PlayerController : MonoBehaviour {
         numAcorns += num;
 
         // Temp for testing
-        if(numAcorns%2 == 0){
-            seasonController.setSeason("WINTER");
-        }else{
+        if(numAcorns % 2 == 0){
             seasonController.setSeason("SUMMER");
+        }else{
+            seasonController.setSeason("WINTER");
         }
     }
 
